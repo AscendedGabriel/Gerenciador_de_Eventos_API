@@ -39,7 +39,6 @@ Maven
 | Security | Configurações de segurança e autenticação |
 | Service | Regras de negócio |
 | Resources | Arquivos de configuração da aplicação |
-
 ===============================================
 A aplicação segue uma separação de responsabilidades entre as principais camadas:
 

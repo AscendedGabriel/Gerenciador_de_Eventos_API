@@ -27,26 +27,26 @@ Hibernate
 PostgreSQL
 Maven
 ===============================================
-📁 Estrutura do projeto
-src/
-├── main/
-│   ├── java/
-│   │   └── [pacote]/
-│   │       ├── controller/
-|   |       ├── dto/patch/
-│   │       ├── dto/request
-│   │       ├── dto/response
-│   │       ├── mapper/
-│   │       ├── model/
-│   │       ├── repository/
-│   │       ├── security/
-│   │       └── service/
+📁 src/
+├── 📁 main/
+│   ├── 📁 java/
+│   │   └── 📁 [pacote]/
+│   │       ├── 📁 controller/
+│   │       ├── 📁 dto/
+│   │       │   ├── 📁 patch/
+│   │       │   ├── 📁 request/
+│   │       │   └── 📁 response/
+│   │       ├── 📁 mapper/
+│   │       ├── 📁 model/
+│   │       ├── 📁 repository/
+│   │       ├── 📁 security/
+│   │       └── 📁 service/
 │   │
-│   └── resources/
-│       └── application.properties
+│   └── 📁 resources/
+│       └── 📄 application.properties
 │
-└── test/
-    └── java/
+└── 📁 test/
+    └── 📁 java/
 ===============================================
 A aplicação segue uma separação de responsabilidades entre as principais camadas:
 

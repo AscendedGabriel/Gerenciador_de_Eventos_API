@@ -39,7 +39,8 @@ Maven
 | Security | Configurações de segurança e autenticação |
 | Service | Regras de negócio |
 | Resources | Arquivos de configuração da aplicação |
-===============================================
+
+
 A aplicação segue uma separação de responsabilidades entre as principais camadas:
 
 - Controller: Responsável por receber as requisições HTTP, encaminhá-las para a camada de serviço e retornar as respostas apropriadas.

@@ -27,24 +27,18 @@ Hibernate
 PostgreSQL
 Maven
 ===============================================
-src/
-├── main/
-│   ├── java/
-│   │   └── com.example.eventos/
-│   │       ├── controller/
-│   │       ├── dto/
-│   │       │   ├── patch/
-│   │       │   ├── request/
-│   │       │   └── response/
-│   │       ├── mapper/
-│   │       ├── model/
-│   │       ├── repository/
-│   │       ├── security/
-│   │       └── service/
-│   └── resources/
-│       └── application.properties/
-└── test/
-    └── java/
+| Pacote | Responsabilidade |
+|---|---|
+| Controller | Gerenciamento das requisições HTTP |
+| DTO/Patch | Objetos para atualizações parciais |
+| DTO/Request | Objetos recebidos nas requisições |
+| DTO/Response | Objetos retornados nas respostas |
+| Mapper | Conversão entre entidades e DTOs |
+| Model | Entidades do domínio |
+| Repository | Acesso e persistência dos dados |
+| Security | Configurações de segurança e autenticação |
+| Service | Regras de negócio |
+| Resources | Arquivos de configuração da aplicação |
 
 ===============================================
 A aplicação segue uma separação de responsabilidades entre as principais camadas:

@@ -27,26 +27,25 @@ Hibernate
 PostgreSQL
 Maven
 ===============================================
-📁 src/
-├── 📁 main/
-│   ├── 📁 java/
-│   │   └── 📁 [pacote]/
-│   │       ├── 📁 controller/
-│   │       ├── 📁 dto/
-│   │       │   ├── 📁 patch/
-│   │       │   ├── 📁 request/
-│   │       │   └── 📁 response/
-│   │       ├── 📁 mapper/
-│   │       ├── 📁 model/
-│   │       ├── 📁 repository/
-│   │       ├── 📁 security/
-│   │       └── 📁 service/
-│   │
-│   └── 📁 resources/
-│       └── 📄 application.properties
-│
-└── 📁 test/
-    └── 📁 java/
+src/
+├── main/
+│   ├── java/
+│   │   └── com.example.eventos/
+│   │       ├── controller/
+│   │       ├── dto/
+│   │       │   ├── patch/
+│   │       │   ├── request/
+│   │       │   └── response/
+│   │       ├── mapper/
+│   │       ├── model/
+│   │       ├── repository/
+│   │       ├── security/
+│   │       └── service/
+│   └── resources/
+│       └── application.properties/
+└── test/
+    └── java/
+
 ===============================================
 A aplicação segue uma separação de responsabilidades entre as principais camadas:
 

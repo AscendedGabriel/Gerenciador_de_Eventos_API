@@ -226,6 +226,7 @@ Utilize variáveis de ambiente ou arquivos de configuração que não sejam vers
 Gabriel Mendonça
 
 ===============================================
+
 📄 Licença
 
 Projeto desenvolvido como parte de um processo seletivo para demonstrar grau de conhecimento em desenvolvimento backend com Java e Spring Boot.

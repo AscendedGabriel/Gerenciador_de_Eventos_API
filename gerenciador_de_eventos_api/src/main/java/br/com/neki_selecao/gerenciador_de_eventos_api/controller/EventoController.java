@@ -48,7 +48,7 @@ public class EventoController {
 				.orElse(ResponseEntity.notFound().build());
 	}
 	
-	@PostMapping()
+	@PostMapping("/registrar")
 	@Operation(summary = "Registrar dados de um evento", description = "Registra os dados de um evento e o admin responsável baseado em quem está logado no momento do registro.")
     @ApiResponses({
             @ApiResponse(responseCode = "200", description = "Evento registrado"),

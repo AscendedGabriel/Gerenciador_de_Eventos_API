@@ -68,6 +68,7 @@ java -version
 E do Maven com:
 
 mvn -version
+
 ===============================================
 📥 Instalação
 
@@ -86,6 +87,7 @@ Instale as dependências e compile o projeto:
 No Windows, também é possível utilizar:
 
 mvnw.cmd clean install
+
 ===============================================
 🔐 Configuração
 
@@ -115,12 +117,12 @@ http://localhost:8080
 
 📡 Endpoints
 Administrador
-Método	Endpoint	Descrição
-GET	    /api/administrador	              Lista todos os administradores
-GET	    /api/administrador/{id}	          Busca um administrador pelo ID
-POST    /api/administrador/registrar	    Cria um novo administrador
-PATCH	  /api/administrador/{id}	          Atualiza um administrador
-DELETE	/api/administrador/{id}	          Remove um administrador
+= Método	Endpoint	Descrição
+= GET	    /api/administrador	              Lista todos os administradores
+= GET	    /api/administrador/{id}	          Busca um administrador pelo ID
+= POST    /api/administrador/registrar	    Cria um novo administrador
+= PATCH	  /api/administrador/{id}	          Atualiza um administrador
+= DELETE	/api/administrador/{id}	          Remove um administrador
 Exemplo de criação de administrador
 
 POST /api/administrador/registrar
@@ -179,6 +181,7 @@ Fluxo de login da aplicação
 Primeiro faça o registro de um administrador
 Depois realize o login do administrador registrado
 Você recebera um Token, copie esse Token e utilize-o para autorizar o uso das outras ferramentas da aplicação
+
 ===============================================
 🧪 Testes
 
@@ -189,22 +192,27 @@ Para executar os testes automatizados:
 No Windows:
 
 mvnw.cmd test
+
 ===============================================
 📖 Documentação da API
 
 http://localhost:8080/swagger-ui/index.html
+
 ===============================================
 🔒 Segurança
 
 Utilize variáveis de ambiente ou arquivos de configuração que não sejam versionados pelo Git.
+
 ===============================================
 📌 Status
 
 ✅ Completo
+
 ===============================================
 👨‍💻 Autor
 
 Gabriel Mendonça
+
 ===============================================
 📄 Licença
 

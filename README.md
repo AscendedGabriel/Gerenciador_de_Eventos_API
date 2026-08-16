@@ -120,9 +120,9 @@ Configure as informações necessárias para conexão com o banco de dados no ar
 
 Exemplo:
 
-spring.datasource.url=jdbc:postgresql://meu-servidor.com:5432/eventos
-spring.datasource.username=seu_usuario
-spring.datasource.password=sua_senha
+- spring.datasource.url=jdbc:postgresql://meu-servidor.com:5432/eventos
+- spring.datasource.username=seu_usuario
+- spring.datasource.password=sua_senha
 
 ===============================================
 
@@ -142,6 +142,7 @@ Por padrão, a aplicação estará disponível em:
 http://localhost:8080
 
 📡 Endpoints
+
 Administrador
 - Método	Endpoint	Descrição
 - GET	    /api/administrador	              Lista todos os administradores
@@ -154,58 +155,102 @@ Exemplo de criação de administrador
 POST /api/administrador/registrar
 
 {
+
   "nome": "João Carlos",
+  
   "email": "jcarlos@gmail.com",
+  
   "senha": "carlos1234"
+  
 }
 
 Exemplo de resposta
+
 {
+
   "id": 1,
+  
   "nome": "João Carlos",
+  
   "email": "jcarlos@gmail.com",
+  
   "senha": "carlos1234"
+  
 }
 
 Eventos
-Método	Endpoint	Descrição
-GET	    /api/eventos	              Lista todos os eventos
-GET	    /api/eventos/{id}	          Busca um evento pelo ID
-POST    /api/eventos/registrar	    Cria um novo evento
-PATCH	  /api/eventos/{id}	          Atualiza um evento
-DELETE	/api/eventos/{id}	          Remove um evento
+- Método	Endpoint	Descrição
+- GET	    /api/eventos	              Lista todos os eventos
+- GET	    /api/eventos/{id}	          Busca um evento pelo ID
+- POST    /api/eventos/registrar	    Cria um novo evento
+- PATCH	  /api/eventos/{id}	          Atualiza um evento
+- DELETE	/api/eventos/{id}	          Remove um evento
 Exemplo de criação de evento
 
 POST /api/eventos
 
 {
+
   "nome": "Festa de 15 Anos",
+  
   "data": "2026-08-14",
+  
   "localizacao": "Petrópolis-RJ",
+  
   "imagem": {URL da imagem},
+  
   "admin": {
     "id": 1
-  }
+    }
+  
 }
 
 Exemplo de resposta
+
 {
+
   "id": 1,
+  
   "nome": "Festa de 15 Anos",
+  
   "data": "2026-08-14",
+  
   "localizacao": "Petrópolis-RJ",
+  
   "imagem": {URL da imagem}
+  
   "adminId": 1
+  
 }
 
 Login
-Método	Endpoint	Descrição
-POST    /auth/login  Login do administrador
+- Método	Endpoint	Descrição
+- POST    /auth/login  Login do administrador
+
+POST /auth/login
+
+  {
+  
+  "email": "jcarlos@gmail.com",
+  
+  "senha": "carlos1234"
+  
+}
+
+Exemplo de resposta 
+
+{
+
+{Código token}
+
+}
 
 Fluxo de login da aplicação
 
 Primeiro faça o registro de um administrador
+
 Depois realize o login do administrador registrado
+
 Você recebera um Token, copie esse Token e utilize-o para autorizar o uso das outras ferramentas da aplicação
 
 ===============================================

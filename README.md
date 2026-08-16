@@ -10,6 +10,7 @@ Consulta de todos os administradores
 Consulta de administradores por ID
 Exclusão de administradores
 ===============================================
+
 Cadastro de eventos
 Consulta de todos os eventos
 Consulta de evento por ID
@@ -17,7 +18,9 @@ Atualização da data e localização dos eventos
 Exclusão de eventos
 Validação dos dados recebidos
 Persistência dos dados em banco de dados
+
 ===============================================
+
 🛠️ Tecnologias
 Java
 Spring Boot
@@ -27,6 +30,7 @@ Hibernate
 PostgreSQL
 Maven
 ===============================================
+
 | Pacote | Responsabilidade |
 |---|---|
 | Controller | Gerenciamento das requisições HTTP |
@@ -90,6 +94,7 @@ No Windows, também é possível utilizar:
 mvnw.cmd clean install
 
 ===============================================
+
 🔐 Configuração
 
 Configure as informações necessárias para conexão com o banco de dados no arquivo de configuração da aplicação.
@@ -101,6 +106,7 @@ spring.datasource.username=seu_usuario
 spring.datasource.password=sua_senha
 
 ===============================================
+
 ▶️ Executando a aplicação
 
 Para executar o projeto utilizando o Maven Wrapper:
@@ -184,6 +190,7 @@ Depois realize o login do administrador registrado
 Você recebera um Token, copie esse Token e utilize-o para autorizar o uso das outras ferramentas da aplicação
 
 ===============================================
+
 🧪 Testes
 
 Para executar os testes automatizados:
@@ -195,21 +202,25 @@ No Windows:
 mvnw.cmd test
 
 ===============================================
+
 📖 Documentação da API
 
 http://localhost:8080/swagger-ui/index.html
 
 ===============================================
+
 🔒 Segurança
 
 Utilize variáveis de ambiente ou arquivos de configuração que não sejam versionados pelo Git.
 
 ===============================================
+
 📌 Status
 
 ✅ Completo
 
 ===============================================
+
 👨‍💻 Autor
 
 Gabriel Mendonça

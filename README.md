@@ -97,8 +97,9 @@ spring.datasource.url=jdbc:postgresql://meu-servidor.com:5432/eventos
 spring.datasource.username=seu_usuario
 spring.datasource.password=sua_senha
 
-▶️ Executando a aplicação
 ===============================================
+▶️ Executando a aplicação
+
 Para executar o projeto utilizando o Maven Wrapper:
 
 Linux/macOS
@@ -115,14 +116,14 @@ http://localhost:8080
 📡 Endpoints
 Administrador
 Método	Endpoint	Descrição
-GET	    /api/administrador	    Lista todos os administradores
-GET	    /api/administrador/{id}	Busca um administrador pelo ID
-POST    /api/administrador	    Cria um novo administrador
-PATCH	  /api/administrador/{id}	Atualiza um administrador
-DELETE	/api/administrador/{id}	Remove um administrador
+GET	    /api/administrador	              Lista todos os administradores
+GET	    /api/administrador/{id}	          Busca um administrador pelo ID
+POST    /api/administrador/registrar	    Cria um novo administrador
+PATCH	  /api/administrador/{id}	          Atualiza um administrador
+DELETE	/api/administrador/{id}	          Remove um administrador
 Exemplo de criação de administrador
 
-POST /api/administrador
+POST /api/administrador/registrar
 
 {
   "nome": "João Carlos",
@@ -140,11 +141,11 @@ Exemplo de resposta
 
 Eventos
 Método	Endpoint	Descrição
-GET	    /api/eventos	    Lista todos os eventos
-GET	    /api/eventos/{id}	Busca um evento pelo ID
-POST    /api/eventos	    Cria um novo evento
-PATCH	  /api/eventos/{id}	Atualiza um evento
-DELETE	/api/eventos/{id}	Remove um evento
+GET	    /api/eventos	              Lista todos os eventos
+GET	    /api/eventos/{id}	          Busca um evento pelo ID
+POST    /api/eventos/registrar	    Cria um novo evento
+PATCH	  /api/eventos/{id}	          Atualiza um evento
+DELETE	/api/eventos/{id}	          Remove um evento
 Exemplo de criação de evento
 
 POST /api/eventos
@@ -168,6 +169,16 @@ Exemplo de resposta
   "imagem": {URL da imagem}
   "adminId": 1
 }
+
+Login
+Método	Endpoint	Descrição
+POST    /auth/login  Login do administrador
+
+Fluxo de login da aplicação
+
+Primeiro faça o registro de um administrador
+Depois realize o login do administrador registrado
+Você recebera um Token, copie esse Token e utilize-o para autorizar o uso das outras ferramentas da aplicação
 ===============================================
 🧪 Testes
 

@@ -5,18 +5,29 @@ API de Gerenciamento de Eventos
 Backend de uma API REST para gerenciamento de eventos, desenvolvido com Java e Spring Boot.
 
 📋 Funcionalidades
+
 Cadastro de administradores
+
 Consulta de todos os administradores
+
 Consulta de administradores por ID
+
 Exclusão de administradores
+
 ===============================================
 
 Cadastro de eventos
+
 Consulta de todos os eventos
+
 Consulta de evento por ID
+
 Atualização da data e localização dos eventos
+
 Exclusão de eventos
+
 Validação dos dados recebidos
+
 Persistência dos dados em banco de dados
 
 ===============================================

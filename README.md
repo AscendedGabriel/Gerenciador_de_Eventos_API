@@ -33,13 +33,21 @@ Persistência dos dados em banco de dados
 ===============================================
 
 🛠️ Tecnologias
+
 Java
+
 Spring Boot
+
 Spring Web
+
 Spring Data JPA
+
 Hibernate
+
 PostgreSQL
+
 Maven
+
 ===============================================
 
 | Pacote | Responsabilidade |
@@ -135,12 +143,12 @@ http://localhost:8080
 
 📡 Endpoints
 Administrador
-= Método	Endpoint	Descrição
-= GET	    /api/administrador	              Lista todos os administradores
-= GET	    /api/administrador/{id}	          Busca um administrador pelo ID
-= POST    /api/administrador/registrar	    Cria um novo administrador
-= PATCH	  /api/administrador/{id}	          Atualiza um administrador
-= DELETE	/api/administrador/{id}	          Remove um administrador
+- Método	Endpoint	Descrição
+- GET	    /api/administrador	              Lista todos os administradores
+- GET	    /api/administrador/{id}	          Busca um administrador pelo ID
+- POST    /api/administrador/registrar	    Cria um novo administrador
+- PATCH	  /api/administrador/{id}	          Atualiza um administrador
+- DELETE	/api/administrador/{id}	          Remove um administrador
 Exemplo de criação de administrador
 
 POST /api/administrador/registrar

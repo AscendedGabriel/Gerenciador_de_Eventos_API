@@ -47,7 +47,7 @@ private final AdministradorService adminService;
 				.orElse(ResponseEntity.notFound().build());
 	}
 	
-	@PostMapping()
+	@PostMapping("/registrar")
 	@Operation(summary = "Atualizar os dados de um administrador", description = "Atualiza os dados de um administrador específico.")
     @ApiResponses({
             @ApiResponse(responseCode = "200", description = "Administrador atualizado"),
